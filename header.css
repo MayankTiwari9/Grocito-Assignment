@@ -1,0 +1,139 @@
+.logo-div {
+  border-bottom: 1px solid rgb(232, 228, 228);
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  top: 0;
+}
+
+.logo-div img {
+  border-right: 1px solid rgb(232, 228, 228);
+  width: 220px;
+  height: 110px;
+}
+
+.cart-div {
+  width: 150px;
+  height: 3vmax;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  color: #ffffff;
+  background: linear-gradient(to right, #54047e, #c2096c);
+  justify-content: center;
+}
+
+.cart-div:hover {
+  background: #54047e;
+}
+
+.menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.nav-links input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  height: 3vmax;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  padding: 1%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  box-shadow: 0 2px 7px rgba(34, 34, 34, 0.35);
+  transition: 250ms ease all;
+  transform-origin: 50% 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #8d8888;
+  padding: 1%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-div {
+    background-color: rgb(237, 247, 239);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: none;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin-bottom: 10px;
+  }
+
+  .cart-div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-links input {
+    width: 100%;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

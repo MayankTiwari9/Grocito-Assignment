@@ -1,0 +1,134 @@
+.footer-div-1 {
+  display: flex;
+  background: rgb(237, 247, 239);
+  padding: 50px 15px;
+  font-size: small;
+}
+h6,
+h5 {
+  font-weight: 700;
+}
+.footer-logo-div {
+  width: 27%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo-div > img {
+  width: 100%;
+  height: 200px;
+}
+.footer-quick-links {
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+}
+
+.footer-quick-links > a {
+  text-decoration: none;
+  color: #000000;
+  margin-top: 10px;
+}
+.footer-ps-links {
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+}
+
+.footer-ps-links > a {
+  text-decoration: none;
+  color: #000000;
+  margin-top: 10px;
+}
+.footer-connect {
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+}
+.footer-connect > div {
+  display: flex;
+}
+.footer-connect > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 40px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  height: 40px;
+}
+
+.footer-connect > p > a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #000000;
+  margin-top: 10px;
+}
+.footer-div-2 {
+  background: rgb(238, 238, 236);
+  padding: 20px;
+  height: 150px;
+  font-size: small;
+}
+.footer-div-3 {
+  background: rgb(24, 24, 25);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: small;
+}
+.footer-div-3 > p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-div-1 {
+    flex-direction: column;
+  }
+
+  .footer-logo-div,
+  .footer-quick-links,
+  .footer-ps-links,
+  .footer-connect {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .footer-connect > div {
+    flex-direction: column;
+  }
+
+  .footer-div-2 {
+    height: 190px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .footer-logo-div,
+  .footer-quick-links,
+  .footer-ps-links,
+  .footer-connect {
+    width: 50%;
+  }
+
+  .footer-div-2 {
+    height: 190px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .footer-logo-div,
+  .footer-quick-links,
+  .footer-ps-links,
+  .footer-connect {
+    width: 25%;
+  }
+
+  .footer-div-2 {
+    height: 190px;
+  }
+}
